@@ -19,8 +19,8 @@ h1{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 500px){
     h1{
-        font-size: 3em;
+        font-size: 1em;
     }
 }
