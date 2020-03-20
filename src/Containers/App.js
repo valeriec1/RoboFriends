@@ -32,7 +32,7 @@ class App extends Component{
         return(
             <div className='tc'>
                 <div className="top-bar">
-                    <h1>ROBOFRIENDS</h1>
+                    <h1>ROBOFRIEND</h1>
                     <Searchbar searchChange={this.onSearchChange}/>
                 </div>
                 <div className="flex flex-wrap justify-center">
