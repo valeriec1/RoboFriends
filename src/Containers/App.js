@@ -3,6 +3,7 @@ import Cardlist from'../Components/Cardlist';
 // import { robots } from './robots';
 import Searchbar from'../Components/Searchbar';
 import './App.css';
+import ErrorBoundry from '../Components/ErrorBoundry';
 
 class App extends Component{
     constructor(){
@@ -35,7 +36,9 @@ class App extends Component{
                     <Searchbar searchChange={this.onSearchChange}/>
                 </div>
                 <div className="flex flex-wrap justify-center">
-                    < Cardlist robots={ filteredRobots }/>
+                    <ErrorBoundry>
+                        < Cardlist robots={ filteredRobots }/>
+                    </ErrorBoundry>
                 </div>
             </div>
           
